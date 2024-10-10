@@ -352,7 +352,6 @@ body.nav-active { overflow: hidden; }
 .i1{
   width: 100%;
   height: 100%;
-  width: 100%;
   border-radius: 50%;
 }
 .footer-social-icon li svg {
@@ -988,8 +987,8 @@ textarea {
 
 @media (max-width: 768px) {
   .i1{
-    height: 200px;
-    width: 200px;
+    height: 160px;
+    width: 160px;
   }
   .hero-content{
     text-align: left;
