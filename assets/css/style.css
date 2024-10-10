@@ -987,8 +987,8 @@ textarea {
 
 @media (max-width: 768px) {
   .i1{
-    height: 160px;
-    width: 160px;
+    height: 180px;
+    width: 180px;
   }
   .hero-content{
     text-align: left;
