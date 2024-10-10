@@ -36,6 +36,10 @@
   --transition-3: 0.3s ease-in-out;
 
 }
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
 
 *,
 *::before,
@@ -347,9 +351,25 @@ body.nav-active { overflow: hidden; }
 
 .i1{
   width: 100%;
+  height: 100%;
+  width: 100%;
   border-radius: 50%;
 }
+.footer-social-icon li svg {
+  width: 24px; /* Set consistent width */
+  height: 24px; /* Set consistent height */
+  display: inline-block; /* Ensure it's inline with other icons */
+}
+.cv-wrapper {
+  margin-top: 10px; /* Space between the social icons and the button */
+  display: flex; /* Ensure it aligns with the button */
+  justify-content: center; /* Center the button */
+}
 
+/* Specific styling for LeetCode SVG */
+.footer-social-icon li a svg {
+  fill: currentColor; /* This ensures the icon color follows the parent text color */
+}
 .hero-content { text-align: center; }
 
 .hero .section-text { margin-block: 24px 36px; }
@@ -383,6 +403,7 @@ body.nav-active { overflow: hidden; }
   -webkit-text-fill-color: transparent;
 }
 .db {
+  align-items: center;
   padding: 10px 20px; 
   background-color: rgb(248, 237, 227);
   border: none;
@@ -393,10 +414,11 @@ body.nav-active { overflow: hidden; }
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 16px;
-}s
+}
 .db:hover{
+
   border: none;
-  color: #000000;
+  color: white;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -605,21 +627,6 @@ textarea.input-field {
   height: 120px;
   max-height: 240px;
   resize: vertical;
-}
-
-
-
-
-
-
-@media (min-width: 575px) {
-  .container {
-    max-width: 540px;
-    width: 100%;
-    margin-inline: auto;
-  }
-  .project-card { --padding: 68px; }
-  .contact-card { padding: 68px; }
 }
 
 @media (min-width: 768px) {
@@ -956,7 +963,6 @@ textarea {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
 
@@ -976,4 +982,91 @@ textarea {
 .github-button:hover {
   background-color: #be123c;
   color: white;
+}
+
+/* Responsive Media Queries */
+
+@media (max-width: 768px) {
+  .i1{
+    height: 200px;
+    width: 200px;
+  }
+  .hero-content{
+    text-align: left;
+    font-size: 20px;
+  }
+  .footer-social-icon ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap; /* Keep all social icons on one line */
+  }
+
+  .footer-social-icon li {
+    margin: 0 5px;
+  }
+
+  .d-inline-block {
+    display: block; /* Ensure the button moves to its own line */
+    width: 100%; /* Take up the full width */
+    text-align: center;
+    margin-top: 10px; /* Add space between icons and the button */
+  }
+  .body{
+    width: 100%;
+    height: 100%;
+  }
+  .container {
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+  .project-container {
+    flex-wrap: wrap;
+  }
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    max-width: 90%;
+  }
+
+  .project-info {
+    padding: 10px;
+  }
+  
+  .project-title {
+    font-size: 16px;
+  }
+
+  .project-description {
+    font-size: 13px;
+  }
+
+  .github-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+    .cv-wrapper {
+      display: block; /* Force the button to appear on the next line */
+      width: 100%; /* Make it full width */
+      text-align: center; /* Center-align the button */
+      margin-top: 10px; /* Add space between social icons and button */
+    }
+  
+    .footer-social-icon ul {
+      flex-wrap: nowrap; /* Ensure social icons stay in one line */
+    }
+    .footer-social-icon li svg {
+      width: 30px; /* Adjust the size of the icon for laptop view */
+      height: 30px;
+    }
+  
+    /* Ensure proper alignment */
+    .footer-social-icon li {
+      margin: 0 10px;
+    }
 }
