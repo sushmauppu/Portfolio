@@ -557,7 +557,7 @@ SKILLS
   margin: 20px 0;
 }
 
-.skills-title {
+.skills-title,projects-category{
   font-size: 2em;
   color: #333;
   margin-bottom: 15px;
@@ -570,7 +570,7 @@ SKILLS
   align-items: center;
 }
 
-.skills-category,projects-category{
+.skills-category{
   text-align: center;
   font-size: 1.5em;
   color: #555;
