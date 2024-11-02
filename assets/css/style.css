@@ -570,7 +570,7 @@ SKILLS
   align-items: center;
 }
 
-.skills-category {
+.skills-category,projects-category{
   text-align: center;
   font-size: 1.5em;
   color: #555;
