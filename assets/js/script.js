@@ -68,7 +68,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 
   console.log('Sending with parameters:', templateParams);
 
-  emailjs.send('service_6qfv3pv', 'template_dyjr9ha', templateParams)
+  emailjs.send('service_xeztlo7', 'template_dyjr9ha', templateParams)
       .then(function(response) {
           console.log('SUCCESS!', response.status, response.text);
           alert('Message sent successfully!');
