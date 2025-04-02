@@ -41,6 +41,50 @@ html, body {
   overflow-x: hidden;
 }
 
+/*
+header {
+  background: linear-gradient(135deg, #66B2FF, #A9D1DB, #D0E2E8);
+}
+
+.container,.project-container {
+  background: linear-gradient(135deg, #66B2FF, #A9D1DB, #D0E2E8);
+  background-attachment: fixed; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+*/
+
+.navbar-list {
+  display: flex;
+  justify-content: flex-end; /* Moves items to the right */
+  align-items: center;
+  gap: 2rem; /* Adjust spacing between items */
+  list-style: none;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.gradient-text {
+  background: #8352b3;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.h1.hero-title {
+  font-family: Tahoma, Verdana, sans-serif;;
+  font-size: 2.4rem; /* Adjust font size as needed */
+  white-space: nowrap; /* Prevents text from breaking into a new line */
+}
+/*
+.white-text {
+  font-size: 2.4rem;
+}
+*/
 *,
 *::before,
 *::after {
@@ -269,7 +313,13 @@ body.nav-active { overflow: hidden; }
 
 .nav-close-btn:is(:hover, :focus-visible) { background-color: var(--white_a12); }
 
-.navbar-list { margin-block-end: auto; }
+.navbar-list {
+  display: flex;
+  margin-left: auto; /* Pushes the nav items to the right */
+  align-items: center;
+  gap: 2rem; /* Adjust spacing between items */
+  margin-block-end: auto;
+}
 
 .navbar-link {
   font-weight: var(--fw-700);
@@ -355,6 +405,30 @@ body.nav-active { overflow: hidden; }
 .hero .container {
   display: grid;
   gap: 50px;
+}
+
+.hero-banner img {
+  width: 450px; 
+  height: 450px; 
+  object-fit: cover; 
+  border-radius: 50%; 
+}
+
+.hero-banner {
+  padding-left: 150px; 
+  padding-top: 1px;
+  padding-bottom: 20px;
+}
+
+.hero-title {
+  font-size: 10 px; 
+}
+
+.h1.hero-title {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 3.5rem; /* Adjust size here, try 2rem or 1.8rem for smaller */
+  font-weight: 700; /* You can adjust to 400, 600, or 700 depending on the look you want */
+  
 }
 
 .i1{
@@ -974,6 +1048,7 @@ textarea {
 }
 
 .github-button {
+  background: linear-gradient(135deg,#cea2e7,#9c67d1,#cea2e7);
   padding: 10px 20px;
   background-color: #e11d48;
   border: none;
